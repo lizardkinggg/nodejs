@@ -16,7 +16,6 @@ pipeline {
             steps {
                 echo " ============== start add requirements and testing linter =================="
                         sh """
-			./requirements.sh
 			jslint ./src/currencyservice/server.js
 			jslint ./src/currencyservice/client.js
                         """
